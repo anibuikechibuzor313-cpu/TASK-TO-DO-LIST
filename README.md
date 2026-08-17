@@ -109,3 +109,29 @@ An error message is displayed and the task is not added.
 1. Clone the GitHub repository.
 2. Open the project folder in VS Code.
 3. Open index.html in a web browser or use a local development server.
+## Testing
+
+The following features were tested successfully:
+
+- Adding a new task
+- Preventing empty tasks from being added
+- Marking a task as complete
+- Editing an existing task
+- Saving an edited task
+- Cancelling an edit
+- Deleting a task
+- Displaying the total number of tasks
+- Saving tasks using Local Storage
+- Loading saved tasks after refreshing the page
+- Responsive layout on smaller screens
+
+## Bug Fix
+
+During development, the original edit feature used JavaScript prompt(). 
+The browser environment did not support prompt(), which caused the error:
+
+"Uncaught Error: prompt() is not supported."
+
+The problem was fixed by replacing the prompt() approach with a custom edit interface containing a text input, Save button, and Cancel button.
+
+After the fix, the Edit feature was tested successfully.
