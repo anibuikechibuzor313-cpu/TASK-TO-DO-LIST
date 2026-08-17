@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">✓</span>
+                <div>
+                    <h1>TaskFlow</h1>
+                    <p>Organize your day, one task at a time.</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="task-section">
+
+            <div class="task-input-area">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="What do you need to do?"
+                    maxlength="100"
+                >
+
+                <button id="addTaskBtn" type="button">
+                    + Add Task
+                </button>
+            </div>
+
+            <p id="errorMessage" class="error-message"></p>
+
+            <div class="task-summary">
+                <h2>My Tasks</h2>
+
+                <div class="task-count">
+                    Total Tasks: <span id="taskCount">0</span>
+                </div>
+            </div>
+
+            <div id="taskList" class="task-list">
+                <!-- Tasks will appear here -->
+            </div>
+
+        </section>
+
+        <footer>
+            <p>TaskFlow &copy; 2026 | Stay organized. Stay productive.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
